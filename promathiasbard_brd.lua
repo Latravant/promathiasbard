@@ -224,7 +224,7 @@ function init_gear_sets()
 		body={ name="Chironic Doublet", augments={'Pet: "Store TP"+1','"Fast Cast"+3','Mag. Acc.+13 "Mag.Atk.Bns."+13',}},
 		hands={ name="Chironic Gloves", augments={'Crit.hit rate+1','Mag. Acc.+23','Mag. Acc.+17 "Mag.Atk.Bns."+17',}},
 		legs="Limbo Trousers",
-		feet={ name="Chironic Slippers", augments={'Sklchn.dmg.+1%','"Dbl.Atk."+3','Accuracy+13 Attack+13','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
+		feet="aoidos' cothurnes +1",
 		neck="Bard's Charm",
 		waist="Witful Belt",
 		left_ear="Allegro Earring",
@@ -236,12 +236,12 @@ function init_gear_sets()
     sets.idle.PDT = {main=gear.Staff.PDT, sub="Mephitis Grip",range="Oneiros Harp",
         head="Gendewitha Caubeen",neck="Wiglen Gorget",ear1="Bloodgem Earring",ear2="Loquacious Earring",
         body="Gendewitha Bliaut",hands="Gendewitha Gages",ring1="Defending Ring",ring2="Sangoma Ring",
-        back="Umbra Cape",waist="Flume Belt",legs="Gendewitha Spats",feet="Aoidos' Cothurnes +2"}
+        back="Umbra Cape",waist="Flume Belt",legs="Gendewitha Spats",feet="Aoidos' Cothurnes +1"}
 
     sets.idle.Town = {main=gear.Staff.PDT, sub="Mephitis Grip",range="Oneiros Harp",
         head="Gendewitha Caubeen",neck="Wiglen Gorget",ear1="Bloodgem Earring",ear2="Loquacious Earring",
         body="Gendewitha Bliaut",hands="Gendewitha Gages",ring1="Paguroidea Ring",ring2="Sangoma Ring",
-        back="Umbra Cape",waist="Flume Belt",legs="Nares Trews",feet="Aoidos' Cothurnes +2"}
+        back="Umbra Cape",waist="Flume Belt",legs="Nares Trews",feet="Aoidos' Cothurnes +1"}
     
     sets.idle.Weak = {main=gear.Staff.PDT,sub="Mephitis Grip",range="Oneiros Harp",
         head="Gendewitha Caubeen",neck="Twilight Torque",ear1="Bloodgem Earring",
@@ -261,7 +261,7 @@ function init_gear_sets()
         body="Gendewitha Bliaut",hands="Gendewitha Gages",ring1="Defending Ring",ring2="Shadow Ring",
         back="Engulfer Cape",waist="Flume Belt",legs="Bihu Cannions",feet="Gendewitha Galoshes"}
 
-    sets.Kiting = {feet="Aoidos' Cothurnes +2"}
+    sets.Kiting = {feet="Aoidos' Cothurnes +1"}
 
     sets.latent_refresh = {waist="Fucho-no-obi"}
 
@@ -273,10 +273,18 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
     
     -- Basic set for if no TP weapon is defined.
-    sets.engaged = {range="Angel Lyre",
-        head="Nahtirah Hat",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Bihu Justaucorps",hands="Buremte Gloves",ring1="Rajas Ring",ring2="K'ayres Ring",
-        back="Atheling Mantle",waist="Goading Belt",legs="Brioso Cannions +1",feet="Gendewitha Galoshes"}
+    sets.engaged = {head={ name="Chironic Hat", augments={'"Store TP"+1','"Fast Cast"+2','Crit.hit rate+1','Mag. Acc.+13 "Mag.Atk.Bns."+13',}},
+		body={ name="Chironic Doublet", augments={'Pet: "Store TP"+1','"Fast Cast"+3','Mag. Acc.+13 "Mag.Atk.Bns."+13',}},
+		hands={ name="Chironic Gloves", augments={'Crit.hit rate+1','Mag. Acc.+23','Mag. Acc.+17 "Mag.Atk.Bns."+17',}},
+		legs="Limbo Trousers",
+		feet={ name="Chironic Slippers", augments={'Sklchn.dmg.+1%','"Dbl.Atk."+3','Accuracy+13 Attack+13','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
+		neck="Bard's Charm",
+		waist="Cetl Belt",
+		left_ear="Suppanomimi",
+		right_ear="Eabani Earring",
+		left_ring="Chirich Ring",
+		right_ring="Chirich Ring",
+		back="Blithe Mantle",}
 
     -- Sets with weapons defined.
     sets.engaged.Dagger = {range="Angel Lyre",
